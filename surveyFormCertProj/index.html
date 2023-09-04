@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Krueger Design Co. Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Krueger Design Co. Satisfaction Survey</h1>
+<p id="description">Thank you for being a Krueger Design Co. Customer! Your feedback is welcome, please put it in
+    the below form!</p>
+<div>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name (required): <input type="text" id="name" placeholder="First Last"
+                                                                      required></label>
+            <label for="email" id="email-label">Email (required): <input type="email" id="email"
+                                                                         placeholder="john@appleseed.co"
+                                                                         required></label>
+            <label for="number" id="number-label">Number of Design Projects: <input type="number" id="number" min="1"
+                                                                                    max="99"
+                                                                                    placeholder="Min 1"></label>
+            <label for="dropdown">Select service: <select id="dropdown">
+                <option>--Choose one--</option>
+                <option>Network design</option>
+                <option>Graphic design</option>
+                <option>Server hardware design</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Please select the services you used:</label>
+            <label for="consulting"><input type="checkbox" id="consulting" value="consulting"> Consulting</label>
+            <label for="stamped-designs"><input type="checkbox" id="stamped-designs" value="stamped-designs"> Stamped Engineering Designs</label>
+            <label for="installation"><input type="checkbox" id="installation" value="installation"> Hardware installation/implementation of design</label>
+        </fieldset>
+        <fieldset>
+            <label for="text-feedback">What feedback do you have for us?
+                <textarea id="text-feedback" placeholder="What can we do better?" rows="4" cols="30"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="yes-response"><input type="radio" id="yes-response" name="send-response" value="yes-response"> I want to receive a copy of my survey responses.</label>
+            <label for="no-response"><input type="radio" id="no-response" name="send-response" value="no-response"> I do not want to receive a copy of my survey responses.</label>
+        </fieldset>
+        <input type="submit" id="submit" class="submit">
+    </form>
+</div>
+</body>
+</html>

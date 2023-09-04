@@ -1,0 +1,12 @@
+label {
+    display: block;
+    margin: 5px auto;
+}
+
+textarea {
+    margin: 10px 0 auto;
+}
+
+.submit {
+    margin: 10px auto;
+}
